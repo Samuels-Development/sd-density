@@ -4,7 +4,7 @@ sd-density is a zone- and time-based density-modifier for FiveM. Using ox_lib po
 
 Example: Make Legion’s Park almost empty from 00:00–06:00, lightly trafficked from 06:00–18:00, and bustling from 18:00–24:00.
 
-Settings are saved in a GlobalState bag (zone_<key>) on the server and instantly pushed to all clients.
+Settings are saved in a GlobalState bag (zone_key) on the server and instantly pushed to all clients.
 For testing or live tweaks, there’s an admin command to edit any zone’s schedule in runtime.
 
 ## 🔔 Contact
@@ -27,9 +27,8 @@ Store: [Click Here](https://fivem.samueldev.shop)
 ## 📖 Admin Usage
 
 ### Command
-/pop:set <zoneKey> <scheduleIndex> <field> <value>
-
-zoneKey | The key of the zone in your Config.Zones table (e.g. downtown, hospital, grovestreet).
-scheduleIndex | The 1-based index into that zone’s population array (which entry you’re editing).
-field | Which density to change: peds, vehicles, randomVehicles, parked, or scenario.
-value | A float ≥ 0.0 (0 = none, 1 = “normal”), or higher if you want extra density.
+/pop:set zoneKey scheduleIndex field value
+* zoneKey | The key of the zone in your Config.Zones table (e.g. downtown, hospital, grovestreet).
+* scheduleIndex | The 1-based index into that zone’s population array (which entry you’re editing).
+* field | Which density to change: peds, vehicles, randomVehicles, parked, or scenario.
+* value | A float ≥ 0.0 (0 = none, 1 = “normal”), or higher if you want extra density.
