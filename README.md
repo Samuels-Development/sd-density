@@ -31,4 +31,4 @@ Store: [Click Here](https://fivem.samueldev.shop)
 * zoneKey | The key of the zone in your Config.Zones table (e.g. downtown, hospital, grovestreet).
 * scheduleIndex | The 1-based index into that zone’s population array (which entry you’re editing).
 * field | Which density to change: peds, vehicles, randomVehicles, parked, or scenario.
-* value | A float ≥ 0.0 (0 = none, 1 = “normal”), or higher if you want extra density.
+* value | A float ≥ 0.0 (0 = none, 1 = “max”), according to native documentation 1.0 is the max, you can attempt to set it higher.
