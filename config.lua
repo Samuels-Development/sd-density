@@ -1,6 +1,6 @@
 Config = {}
 
-Config.DebugPrints = true -- Debug Prints to console (client & server).
+Config.DebugPrints = false -- Debug Prints to console (client & server).
 
 Config.Zones = {
   -- Example for this entry:
@@ -16,7 +16,7 @@ Config.Zones = {
       vector3(1239.57,  -42.82, 25.00),
     },
     thickness = 500.0,
-    debug     = true,
+    debug     = false,
     -- The `population` field is an array of:
     --   { from = <hour>, to = <hour>, population = { peds, vehicles, randomVehicles, parked, scenario } }
     -- Hours are in 24h format, [from, to).  Schedules must cover 0–24 to avoid fallbacks.
@@ -67,7 +67,7 @@ Config.Zones = {
       vec3(353.07, -2202.24, 20.00),
     },
     thickness = 500.0,
-    debug     = true,
+    debug     = false,
     population = {
       {
         from       =   0,
