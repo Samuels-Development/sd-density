@@ -1,6 +1,6 @@
 # sd-density
 
-sd-density is a zone- and time-based density-modifier for FiveM. Using ox_lib poly zones, you define any area on your map and then schedule custom pedestrian, vehicle, parked-vehicle and scenario-ped densities for different times of day.
+sd-density is a zone- and time-based ped density-modifier for FiveM. Using ox_lib poly zones, you define any area on your map and then schedule custom pedestrian, vehicle, parked-vehicle and scenario-ped densities for different times of day.
 
 Example: Make Legion’s Park almost empty from 00:00–06:00, lightly trafficked from 06:00–18:00, and bustling from 18:00–24:00.
 
