@@ -7,6 +7,8 @@ Example: Make Legion’s Park almost empty from 00:00–06:00, lightly trafficke
 Settings are saved in a GlobalState bag (zone_key) on the server and instantly pushed to all clients.
 For testing or live tweaks, there’s an admin command to edit any zone’s schedule in runtime.
 
+Import: You have to remove any other resource/code that's modifying density. qbx-density as an example.
+
 ## 🔔 Contact
 
 Author: Samuel#0008  
