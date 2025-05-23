@@ -92,3 +92,31 @@ Config.DefaultPopulation = {
   parked         = 0.6,
   scenario       = 0.7,
 }
+
+-- Define all group–group relationships here
+-- Each entry has: group1, group2, and the relationship value
+--[[ Relationship types:  
+0 = Companion  
+1 = Respect  
+2 = Like  
+3 = Neutral  
+4 = Dislike  
+5 = Hate  
+255 = Pedestrians]]
+Config.Relationships = {
+  { group1 = "AMBIENT_GANG_HILLBILLY", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_BALLAS", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_MEXICAN", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_FAMILY", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_MARABUNTE", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_SALVA", group2 = "PLAYER", relationship = 1 },
+  { group1 = "AMBIENT_GANG_LOST", group2 = "PLAYER", relationship = 1 },
+  { group1 = "GANG_1", group2 = "PLAYER", relationship = 1 },
+  { group1 = "GANG_2", group2 = "PLAYER", relationship = 1 },
+  { group1 = "GANG_9", group2 = "PLAYER", relationship = 1 },
+  { group1 = "GANG_10", group2 = "PLAYER", relationship = 1 },
+  { group1 = "FIREMAN", group2 = "PLAYER", relationship = 1 },
+  { group1 = "MEDIC", group2 = "PLAYER", relationship = 1 },
+  { group1 = "COP", group2 = "PLAYER", relationship = 1 },
+  { group1 = "PRISONER", group2 = "PLAYER", relationship = 1 },
+}

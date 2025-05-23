@@ -5,6 +5,10 @@ local debug = Config.DebugPrints
 local zones = Config.Zones
 local defaultPop = Config.DefaultPopulation
 
+for _, rel in ipairs(cfg.Relationships) do
+    SetRelationshipBetweenGroups(rel.relationship,rel.group1,rel.group2)
+end
+
 --- Spawns a polygonal zone with ox_lib and sets up enter/exit handlers.
 --- @param id string      Unique key matching Config.Zones[id].
 --- @param zoneData table Zone definition (points, thickness, debug, population schedules).
