@@ -5,7 +5,7 @@ local debug = Config.DebugPrints
 local zones = Config.Zones
 local defaultPop = Config.DefaultPopulation
 
-for _, rel in ipairs(cfg.Relationships) do
+for _, rel in ipairs(Config.Relationships) do
     SetRelationshipBetweenGroups(rel.relationship,rel.group1,rel.group2)
 end
 
